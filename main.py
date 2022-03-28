@@ -8,8 +8,7 @@ nested_list = [
 ]
 
 my_iterator = IteratorForNested(nested_list)
-for i in my_iterator:
-    print(i)
+flat_list = [item for item in my_iterator]
 
 for item in generator_for_nested(nested_list):
     print(item)
